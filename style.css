@@ -144,11 +144,11 @@ ul a:hover{
 } */
 .footer{
     display: flex;
-    gap: 30px;
+    justify-content: space-between;
     background-color: #212529;
     color: #fff;
     margin-top: 5%;
-    
+    padding: 70px;
 }
 #post{
     font-weight: bold;
@@ -166,4 +166,28 @@ ul a:hover{
 }
 #name{
     font-weight: bold;
+}
+#products{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-left: 5%;
+  
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* height: 150px; */
+    /* width: 60px; */
+
+}
+#products img{
+    height: 200px;
+}
+#products h2{
+    font-size: 20px;
+    text-align: center;
+}
+#products button{
+    background-color: yellow;
+    margin-bottom:10%;
+    float: right;
+    margin-right: 40%;
 }
